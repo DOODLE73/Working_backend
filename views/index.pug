@@ -1,0 +1,37 @@
+doctype html
+html
+    head
+        title Doodle dance acadamey 
+        style
+            include ../static/style.css
+    body
+        nav#navbar
+            ul
+                li #[a(href="/") Home ]
+                li #[a(href="/") About]
+                li #[a(href="/") Service]
+                li #[a(href="/") Contact Us ]
+        
+        section#intro
+            div#div1 SWAGAT HAI APKA IS KALARANG MACH PAR
+            div#div2 Dance INDIA Dance
+
+        section#cards
+            div#cards_d
+                img.card(src="../static/pug__d1.png", alt="")
+                img.card(src="../static/pug__d2.png", alt="")
+                img.card(src="../static/pug__d3.png", alt="")
+
+
+        section#sponsors
+            div#div_s Our Sponsors
+            div#img   
+                img.img(src="../static/logo1.png", alt="")
+                img.img(src="../static/logo2.png", alt="")
+                img.img(src="../static/logo3.png", alt="")
+        
+        footer#footer
+            div#div_f This page www.DoodleDanceAcadamey.com  have © scopywrite issue
+
+         script 
+            include ../static/index.js   

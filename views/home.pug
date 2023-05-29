@@ -1,0 +1,29 @@
+//- extends matlab me base template ko bhar raha hoon
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style
+    style 
+        include ../static/style.css
+
+block content
+    section#intro
+        div#div1 SWAGAT HAI APKA IS KALARANG MACH PAR
+        div#div2 Dance INDIA Dance
+
+    section#cards
+        div#cards_d
+            img.card(src="../static/pug__d1.png", alt="")
+            img.card(src="../static/pug__d2.png", alt="")
+            img.card(src="../static/pug__d3.png", alt="")
+
+
+    section#sponsors
+        div#div_s Our Sponsors
+        div#img   
+            img.img(src="../static/logo1.png", alt="")
+            img.img(src="../static/logo2.png", alt="")
+            img.img(src="../static/logo3.png", alt="")
+        

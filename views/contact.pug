@@ -1,0 +1,21 @@
+extend base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style
+    style  
+        include ../static/style.css
+        include ../static/styleContact.css
+
+
+block content
+    div#container
+        h1 Contact Us
+        form#MyForm(action="/contact", method="post") 
+            input.MyInput(type="text", name="name" ,placeholder="Enter your name")
+            input.MyInput(type="number", nme="number", placeholder="Enter your number")
+            input.MyInput(type="email", name="email" , placeholder="Enter your email id")
+            input.MyInput(type="text", name="move" ,placeholder="Enter your best Move")
+            button.btn 
+                |submit
